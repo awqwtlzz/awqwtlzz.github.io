@@ -2,48 +2,95 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles.css">
     <title>Пляжи города Сочи</title>
 </head>
+<link rel="stylesheet" href="../styles.css">
 <body>
-    <a href="../index.html">Вернуться на главную</a>
-    <h1>Пляжи</h1>
+    <header>
+        <!-- главное меню сайта -->
+        <div class="info">
+            <nav>
+                <ul class="menu">
+                    <li><img src="/images/logo.png" alt="Логотип Сочи"></li>
+                    <li class="menu-item"><a href="../index.html">Главная</a></li>
+                    <li class="menu-item">Интересные места
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="beaches.html">Пляжи</a></li>
+                                <li><a href="hotels.html">Отели</a></li>
+                                <li><a href="restaurants.html">Рестораны</a></li>
+                                <li><a href="parks.html">Парки</a></li>
+                                <li><a href="flappy-bird.html">Игра</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-<div class="container">
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="card"> 
-        
-        <img src="../images/beach-riva.jpg" alt="Пляж «Ривьера»" width="250px">
-        <div class="card-text">
-            <h2>Пляж «Ривьера»</h2>
-            <p>
-                Пляж «Ривьера» – это благоустроенный песчано-галечный пляжный комплекс в центральном районе Сочи, с протяженной береговой линией без волнорезов, с прогулочной набережной и современной инфраструктурой.
-            </p> 
-        </div>
-    </div>
-    <div class="card"> 
-        
-        <img src="../images/Plyazh-Mayak-v-Sochi.jpg" alt="Пляж «Маяк»" width="250px">
-        <div class="card-text">
+    <main>
+        <h1>Пляжи города Сочи</h1>
+
+        <hr width="200px" color="black">
+        <br>
+
+        <section class="beaches-info">
+            <p>Сочи — приморский курорт с великолепными пляжами на берегу Чёрного моря. От благоустроенных галечных пляжей в центре города до диких уединённых бухт в окрестностях. Общая протяжённость пляжей составляет более 40 км.</p>
             
-            <h2>Пляж «Маяк»</h2>
-            <p>
-                Пляж «Маяк» — центральный галечный пляж Сочи у Морвокзала, известный своей развитой инфраструктурой, включая кафе, рестораны, прокат инвентаря, и живописной набережной с зонами отдыха, а также близостью к концертному залу «Фестивальный».
-            </p> 
-        </div>
-    </div>
-    <div class="card"> 
-        
-        <img src="../images/rosa-hutor.jpg" alt="Пляж Роза хутор" width="250px">
-        <div class="card-text">
-            
-            <h2>Пляж «Роза Хутор»</h2>
-            <p>
-                Пляж «Роза Хутор» – уникальная достопримечательность Адлерского района, предлагающая редкое сочетание отдыха в горах и на море, этот современный пляжный комплекс, расположенный в живописной Имеретинской долине, входит в инфраструктуру знаменитого горнолыжного курорта.
-            </p> 
-        </div>
-    </div>
-</div>
-        
+            <div style="display: flex; gap: 40px; margin: 30px 0; font-size: 18px;">
+                <div><strong>Сезон:</strong> май-октябрь</div>
+                <div><strong>Температура моря:</strong> +20°C до +26°C</div>
+                <div><strong>Тип пляжей:</strong> галечные и песчаные</div>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+<section class="beaches-grid">
+            <h2>Топ-3 пляжа</h2>
+            <div class="container">
+                <div class="card"> 
+                    <img src="../images/beach-riva.jpg" alt="Пляж «Ривьера»">
+                    <div class="card-text">
+                        <h3>Пляж «Ривьера»</h3>
+                        <p><strong>Центральный район</strong> | Благоустроенный | Инфраструктура</p>
+                        <p>бесплатно | 4.6/5</p>
+                    </div>
+                </div>
+                
+                <div class="card"> 
+                    <img src="../images/Plyazh-Mayak-v-Sochi.jpg" alt="Пляж «Маяк»">
+                    <div class="card-text">
+                        <h3>Пляж «Маяк»</h3>
+                        <p><strong>Центр</strong> | Морвокзал | Живая набережная</p>
+                        <p>бесплатно | 4.5/5</p>
+                    </div>
+                </div>
+                
+                <div class="card"> 
+                    <img src="../images/rosa-hutor.jpg" alt="Пляж Роза хутор">
+                    <div class="card-text">
+                        <h3>Пляж «Роза Хутор»</h3>
+                        <p><strong>Адлер</strong> | Горы и море | Современный</p>
+                        <p>бесплатно | 4.7/5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            Город Сочи
+            <br><br>
+            Контакты
+            <br>
+            +7 999 999 99 99
+            <br>
+        </section>
+    </footer>
 </body>
 </html>
