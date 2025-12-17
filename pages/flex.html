@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        header {
+            background-color: rgb(109, 107, 110);
+            color: aliceblue;
+        }
+
+
+        /* стили для главного меню */
+        .main-menu a {
+            text-decoration: none;
+            color: white;
+            padding: 0 1em;
+        }
+
+        .main-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .main-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ----------------------- */
+
+        /* стили для карточек */
+        .card {
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px 2px rgb(68, 53, 71);
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+
+
+
+
+        /* --------------------------- */
+        aside {
+            flex: 1;
+            background-color: rgb(207, 238, 228);
+        }
+        main {
+            flex: 5;
+            background-color: rgb(211, 211, 235);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+        footer {
+            background-color: rgb(212, 198, 192);
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Продукты</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside>Боковое меню</aside>
+        <main>
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>название</h3>
+                <p>описание</p>
+                <p>цена 1000 руб</p>
+            </div>
+
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>название</h3>
+                <p>описание</p>
+                <p>цена 1000 руб</p>
+            </div>
+
+
+            <div class="card">
+                <img src="" alt="">
+                <h3>название</h3>
+                <p>описание</p>
+                <p>цена 1000 руб</p>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>Подвал сайта</footer>
+</body>
+</html>

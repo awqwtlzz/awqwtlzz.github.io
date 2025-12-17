@@ -1,0 +1,33 @@
+.text-cap {
+    text-transform: capitalize;
+    color: brown;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-lower {
+    text-transform: lowercase;
+    color: darkgreen;
+}
+
+.text {
+    border: 1px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+.start {
+    text-align: start;
+}
+
+.end {
+    text-align: end;
+}
+
+.justify {
+    text-align: justify;
+}
